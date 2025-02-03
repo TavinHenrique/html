@@ -1,0 +1,100 @@
+/* Resetando margens e preenchimentos de todos os elementos para evitar espaçamentos indesejados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que largura e altura incluam bordas e preenchimento */
+}
+
+/* Estilização do corpo da página */
+body {
+    background-color: #ffffff; /* Define o fundo como branco */
+    display: flex; /* Usa flexbox para organizar os elementos */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    justify-content: center; /* Centraliza os elementos verticalmente */
+    font-family: sans-serif; /* Define a fonte geral */
+    width: 100vw; /* Garante que o body ocupe toda a largura da tela */
+    min-height: 100vh; /* Garante que ocupe pelo menos 100% da altura da tela */
+    overflow: hidden; /* Impede rolagem da página */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    transform: translateY(-30px); /* Move o conteúdo 30px para cima */
+}
+
+/* Espaçamento inferior da imagem para separá-la do restante do conteúdo */
+.imagem {
+    margin-bottom: 40px;
+}
+
+/* Estilização do título "Sortear número" */
+p {
+    text-align: center; /* Centraliza o texto */
+    font-size: clamp(24px, 10vw, 80px); /* Ajusta o tamanho do texto responsivamente */
+    font-weight: bold; /* Deixa o texto em negrito */
+    margin-bottom: 30px; /* Adiciona um espaçamento abaixo do título */
+    color: #111c22; /* Define a cor do texto */
+}
+
+/* Estilização do botão */
+button {
+    display: flex; /* Usa flexbox para alinhar os itens dentro do botão */
+    margin-top: 20px; /* Adiciona espaçamento acima do botão */
+    justify-content: center; /* Centraliza o texto no botão */
+    align-items: center; /* Centraliza os itens verticalmente */
+    width: 200px; /* Define a largura do botão */
+    height: 40px; /* Define a altura do botão */
+    border: none; /* Remove a borda */
+    border-radius: 10px; /* Arredonda as bordas do botão */
+    background-color: #111c22; /* Define a cor de fundo do botão */
+    color: #ffffff; /* Define a cor do texto */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    font-weight: bold; /* Deixa o texto do botão em negrito */
+    transition: background-color 0.3s, transform 0.2s; /* Animação suave ao interagir com o botão */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #0d151a; /* Muda a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão */
+}
+
+/* Efeito ao clicar no botão */
+button:active {
+    transform: scale(0.95); /* Reduz levemente o botão ao ser pressionado */
+}
+
+/* Estilização dos campos de entrada (input) */
+input {
+    outline: none; /* Remove a borda azul ao focar no campo */
+    border: 1px solid #636363; /* Adiciona uma borda sutil */
+    border-radius: 3px; /* Arredonda as bordas do campo */
+    height: 24px; /* Define a altura do campo de entrada */
+    padding: 5px; /* Adiciona um espaçamento interno */
+    font-size: 16px; /* Define o tamanho do texto dentro do input */
+}
+
+/* Container principal do sorteio */
+.sortear {
+    display: flex; /* Usa flexbox para organização */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    gap: 10px; /* Adiciona espaçamento entre os elementos */
+}
+
+/* Organização dos inputs na mesma linha */
+.inputs {
+    display: flex; /* Usa flexbox */
+    gap: 15px; /* Adiciona espaçamento entre os inputs */
+}
+#resultado{
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.res{
+    display: flex;
+    justify-content: center;
+    
+}

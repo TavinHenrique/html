@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background-color: #fafafa;
+
+
+}
+
+.imagens {
+    position: relative;
+}
+
+.celular {
+    width: 450px;
+
+}
+
+.dentro-cel {
+    height: 520px;
+    left: 153px;
+    top: 26px;
+    position: absolute;
+    transition: opacity 2s;
+}
+
+.logo {
+    margin-bottom: 20px;
+    width: 175px;
+    height: 51px;
+}
+
+.form {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    padding: 50px 40px 30px 40px;
+}
+
+input {
+    height: 36px;
+    width: 300px;
+    padding-left: 5px;
+    border: 1px solid #dbdbdb;
+    outline: none;
+    margin-top: 20px;
+}
+
+button {
+    height: 36px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #37ccfa;
+    color: white;
+    cursor: pointer;
+}
+
+.face {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #3785fa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.face:hover {
+    color: #53baff;
+}
+
+.esqueceu-senha {
+    font-size: 13px;
+    margin-top: 10px;
+    color: #0095f6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cadastro {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    height: 20px;
+    padding: 30px 40px 30px 40px;
+    margin-top: 20px;
+}
+
+.link-cadastro {
+    text-decoration: none;
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.apps {
+    width: 150px;
+    cursor: pointer;
+}
+
+.caixa-app {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.paragrafo{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
