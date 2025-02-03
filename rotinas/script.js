@@ -19,3 +19,11 @@ function adicionarItem(){
         alert('Campo vazio, digite aluma coisa');
     }
 }
+function limpar(){
+    var lista=document.querySelector('#lista');
+    lista.innerHTML=""
+
+    if(lista){
+        alert('Nao tem nada na lsita')
+    }
+}
